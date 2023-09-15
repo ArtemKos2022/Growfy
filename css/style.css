@@ -4,17 +4,66 @@
 @import url("reset.css");
 
 /* ------------------ */
-body {}
+body {
+  background-color: #0d0d11;
+  font-family: Poppins;
+  font-weight: 300;
+  color: #9c9c9c
+}
 
 /* ------------------ */
-.wrapper {}
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: clip;
+}
 
 /* ------------------ */
-
+[class*="__container"] {
+  max-width: 1310;
+  margin: 0 auto;
+  padding: 0px 15px;
+}
 
 /* ------------------ */
+.page {
+  flex: 1 1 auto;
+}
 
+/* Header */
 /* ------------------ */
+.heder {}
+
+.header__container {}
+
+.header__logo {}
+
+.header__menu {}
+
+.menu {}
+
+.menu__body {}
+
+.menu__list {}
+
+.menu__item {}
+
+.menu__link {}
+
+.header__cart {}
+
+.cart-header {}
+
+.cart-header__text {}
+
+.cart-header__quantity {}
+
+.header__button {}
+
+.button {}
+
+.icon-menu {}
 
 /* ------------------ */
 
