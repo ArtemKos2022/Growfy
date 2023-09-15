@@ -1,17 +1,17 @@
-/* ----------------- */
+/* ===========================================================*/
 /* --RESET STYLES--- */
-/* ----------------- */
+/* ===========================================================*/
 @import url("reset.css");
 
-/* ------------------ */
+/* ===========================================================*/
 body {
   background-color: #0d0d11;
-  font-family: Poppins;
+  font-family: "Poppins";
   font-weight: 300;
   color: #9c9c9c
 }
 
-/* ------------------ */
+/* ===========================================================*/
 .wrapper {
   min-height: 100%;
   display: flex;
@@ -19,21 +19,21 @@ body {
   overflow: clip;
 }
 
-/* ------------------ */
+/* ===========================================================*/
 [class*="__container"] {
   max-width: 1310px;
   margin: 0 auto;
   padding: 0px 15px;
 }
 
-/* ------------------ */
+/* ===========================================================*/
 .page {
   flex: 1 1 auto;
 }
 
-/* ------------------ */
+/* ===========================================================*/
 /* Header */
-/* ------------------ */
+/* ===========================================================*/
 .header {
   position: fixed;
   width: 100%;
@@ -284,10 +284,140 @@ body {
   }
 }
 
-/* ------------------ */
+/* ===========================================================*/
+/* main */
+/* ===========================================================*/
+.main {
+  padding-top: 160px;
+  padding-bottom: 100px;
+}
 
-/* ------------------ */
+.main__container {
+  display: flex;
+  gap: 32px;
+}
 
-/* ------------------ */
+.main__content {
+  flex: 0 1 50%;
+  align-self: center;
+}
 
-/* ------------------ */
+.main__header {
+  position: relative;
+}
+
+.main__header::before {
+  content: "";
+  background: url("../img/decor.svg") 0 0 / 100% no-repeat;
+  width: 122px;
+  height: 122px;
+  position: absolute;
+  top: -10px;
+  left: -34px;
+}
+
+.main__text {
+  color: #9c9c9c;
+}
+
+.header-main__title {
+  font-weight: 500;
+  font-size: 51px;
+  line-height: 1.19;
+  /* 61/51 */
+  color: #fff;
+  position: relative;
+}
+
+.header-main__title:not(:last-child) {
+  margin-bottom: 28px;
+}
+
+.header-main__text {
+  line-height: 1.5;
+  font-size: 18px;
+  color: #9c9c9c;
+}
+
+.header-main__text:not(:last-child) {
+  margin-bottom: 33px;
+}
+
+.header-main__actions {
+  display: flex;
+  column-gap: 32px;
+  row-gap: 15px;
+}
+
+.main__images {
+  flex: 0 1 50%;
+}
+
+.images-main {
+  display: flex;
+  gap: 9.615385%;
+  /* 60/624 */
+  justify-content: center;
+}
+
+.images-main__column {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.images-main__item {
+  border-radius: 50% / 29%;
+  overflow: hidden;
+}
+
+.images-main__item_1,
+.images-main__item_4 {
+  border-radius: 50% / 29%;
+}
+
+.images-main__item_2 {
+  border-radius: 50% 50% 0 50%;
+}
+
+.images-main__item_3 {
+  border-radius: 50% 0% 50% 50%;
+}
+
+.images-main__item img {
+  max-width: 100%;
+}
+
+@media (max-width: 991.98px) {
+  .main {
+    padding-top: 120px;
+    padding-bottom: 60px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .main {
+    padding-top: 100px;
+    padding-bottom: 30px;
+  }
+
+  .main__container {
+    flex-direction: column;
+  }
+
+  .main__content {
+    align-self: stretch;
+  }
+}
+
+/* ===========================================================*/
+/* ===========================================================*/
+/* ===========================================================*/
+/* ===========================================================*/
+/* ===========================================================*/
+/* ===========================================================*/
+/* ===========================================================*/
+/* ===========================================================*/
+/* ===========================================================*/
+/* ===========================================================*/
+/* ===========================================================*/
